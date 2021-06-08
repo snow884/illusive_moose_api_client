@@ -18,15 +18,18 @@ im_client = IllusiveMooseClient(user_name="my_username", pwd="my_pwd", blockcyph
 
 ### Illusive moose credentials
 
-In order to be able to initiate the client as a logged-in user you will have to visit https://shop.illusive-moose.ca/auth/register and register as a new user. Use the username and password to initiate the client object.
+In order to be able to initiate the client as a logged-in user you will have to visit https://shop.illusive-moose.ca/auth/register and register as a new user. Then log in and visit https://shop.illusive-moose.ca/api_v1/auth/token . The list should present you with a token that you can later use to initiate the client object.
 
 The API allows guest access and this step is only required if you wish to create new products or new shops. 
 
 ### Blockcypher credentials
 
 In order to be able to buy items with this client you will have to get a token for blockcypher API
-
 https://www.blockcypher.com/
 
+This API token is only required if you wish to purchase items with cryptocurrency via this client.
 
+## Getting started
+
+The best starting point is visiting our [CLIENT USAGE EXAMPLE](/tests/test_client.py) and reviewing the API documentation at https://shop.illusive-moose.ca/docs#/ .
 
